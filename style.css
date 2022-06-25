@@ -39,6 +39,22 @@
   background-color: lightgray;
 }
 
+/* features */
+
+.jumbotron {
+  color: black;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.features-list {
+  padding: 0;
+}
+
+.features-list li {
+  list-style: none;
+}
+
 /*============= SECTION =============*/
 
 /* .narrow {
