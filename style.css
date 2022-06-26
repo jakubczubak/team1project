@@ -1,90 +1,283 @@
+/* start global */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2c7283;
+}
+/* end global */
 /* navigation */
 
 .navbar {
-  background-color: black;
-  font-size: 0.9rem;
-  letter-spacing: 0.1rem;
-  font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-size: 0.9rem;
+	letter-spacing: 0.1rem;
+	font-weight: bold;
+	position: fixed;
+	right: 0;
+	top: 0.5%;
+	width: 100%;
 }
 
 .navbar-brand img {
-  height: 1.8rem;
+	height: 3rem;
 }
 
 .navbar .navbar-nav li {
-  padding-right: 0.6rem;
+	padding-right: 0.6rem;
+}
+
+.navbar .navbar-nav .nav-link {
+	color: white;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  color: greenyellow;
+	color: black;
+	transition: all 300ms linear;
+	transform: scale(1.3, 1.3);
+	text-align: center;
+}
+.adventure h1 {
+	letter-spacing: 5px;
+}
+.startButton {
+	margin-top: 50px;
+	width: 200px;
+}
+.startButton:hover {
+	transform: scale(1.2, 1.2);
+	border: 1px solid black;
 }
 
 /* landing */
 .home-inner {
-  background-image: url(img/computers.png);
-  background-size: contain;
+	background-image: url(img/daniel-leone-g30P1zcOzXo-unsplash.jpg);
+	background-size: contain;
 }
 
 .caption {
-  width: 100%;
-  color: white;
-  position: absolute;
-  top: 30%;
-  z-index: 1;
+	width: 100%;
+	color: white;
+	position: absolute;
+	top: 30%;
+	z-index: 1;
 }
 
 /* course */
 #course {
-  background-color: lightgray;
+	background-color: lightgray;
 }
 
 /* features */
 .jumbotron {
-  color: black;
-  margin-bottom: 0;
-  padding-bottom: 0;
+	color: black;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 .features-list {
-  list-style: none;
-  padding-left: 0;
+	list-style: none;
+	padding-left: 0;
 }
 
 /* resources */
 .resource p {
-  font-size: 0.9rem;
+	font-size: 0.9rem;
+}
+
+/* galery */
+#galery img {
+  width: 25%;
+  aspect-ratio: 1 / 1;
+}
+
+#galery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
 }
 
 /* clients */
 
 .client {
+	width: 80%;
+	border-radius: 50%;
+	min-width: 15vw; /* viewport width */
+}
+/* start about section */
+#about {
+  background-color: #bfd1d5;
+}
+.about {
   width: 80%;
   border-radius: 50%;
+  min-width: 15vw;
+  /* viewport width */
+}
+/* end about section */
+
+/* clients */
+
+.tourist{
+  width: 40%;
+  border-radius: 40%;
   min-width: 15vw; /* viewport width */
+  max-width: 400px;
+}
+
+.blockquote{
+  width: 50%;
+  margin: 20px auto;
+}
+
+.blockquote p{
+  margin: 0 auto;
+}
+
+.blockquote-footer{
+  margin-bottom: 20px;
+}
+
+cite{
+  font-size: 1.2rem;
+}
+
+.jumbo-line{
+  width: 90%;
 }
 
 /* contact */
+#contact footer {
+  background-image: url("/img/mountain.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#contact footer img {
+  opacity: 0.8;
+}
+
+#contact footer button.send_button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  color: black;
+  padding: 5px 60px;
+  border-radius: 10px;
+}
+#contact footer button:hover {
+  background-color: #d3d4d0;
+}
+
 
 footer,
 footer a {
-  color: grey;
+	color: grey;
+}
+
+footer {
+  color: white;
+  font-size: 1.5rem;
 }
 
 footer img {
-  height: 3rem;
-  margin: 1rem 0;
+	height: 3rem;
+	margin: 1rem 0;
 }
 
 footer a:hover,
 footer p,
 footer h3 {
-  color: black;
+
+  color: white;
+}
+
+form {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+form input.form-control {
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+}
+form input.form-control:focus {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+form input.form-control::placeholder {
+  color: white;
+}
+
+form textarea.form-control {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+}
+form textarea.form-control:focus {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+form textarea.form-control::placeholder {
+  color: white;
+}
+.brands img {
+  cursor: pointer;
+  transition: 0.2 ease all;
+}
+.brands img:hover {
+  transform: scale(1.2);
 }
 
 /* own media queries */
-
 @media all and (max-width: 767px) {
+
   .client {
     width: 50%;
+  }
+
+
+  .galery {
+    width: 50%;
+  }
+
+  #galery img {
+    width: 45%;
+    padding: 1px;
+
+  .blockquote {
+    width: 90%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .jumbo-line {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1202px) {
+  .jumbo-line {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 1201px) {
+  .blockquote p{
+    max-width: 560px;
+    font-size: 1.6rem;
+  }
+  .jumbo-line{
+    max-width: 660px;
+
   }
 }
