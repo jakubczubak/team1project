@@ -87,6 +87,21 @@ h6 {
 	font-size: 0.9rem;
 }
 
+/* galery */
+#galery img {
+  width: 25%;
+  aspect-ratio: 1 / 1;
+}
+
+#galery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+
 /* clients */
 
 .client {
@@ -101,7 +116,8 @@ h6 {
 .about {
   width: 80%;
   border-radius: 50%;
-  min-width: 15vw; /* viewport width */
+  min-width: 15vw;
+  /* viewport width */
 }
 /* end about section */
 
@@ -223,12 +239,21 @@ form textarea.form-control::placeholder {
 }
 
 /* own media queries */
-
 @media all and (max-width: 767px) {
 
   .client {
     width: 50%;
   }
+
+
+  .galery {
+    width: 50%;
+  }
+
+  #galery img {
+    width: 45%;
+    padding: 1px;
+
   .blockquote {
     width: 90%;
   }
@@ -253,5 +278,6 @@ form textarea.form-control::placeholder {
   }
   .jumbo-line{
     max-width: 660px;
+
   }
 }
