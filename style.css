@@ -1,3 +1,13 @@
+/* start global */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2c7283;
+}
+/* end global */
 /* navigation */
 
 .navbar {
@@ -55,6 +65,17 @@
   font-size: 0.9rem;
 }
 
+/* start about section */
+#about {
+  background-color: #bfd1d5;
+}
+.about {
+  width: 80%;
+  border-radius: 50%;
+  min-width: 15vw; /* viewport width */
+}
+/* end about section */
+
 /* clients */
 
 .client {
@@ -64,10 +85,31 @@
 }
 
 /* contact */
+#contact footer {
+  background-image: url("/img/mountain.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#contact footer img {
+  opacity: 0.8;
+}
 
-footer,
-footer a {
-  color: grey;
+#contact footer button.send_button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  color: black;
+  padding: 5px 60px;
+  border-radius: 10px;
+}
+#contact footer button:hover {
+  background-color: #d3d4d0;
+}
+
+footer {
+  color: white;
+  font-size: 1.5rem;
 }
 
 footer img {
@@ -78,7 +120,48 @@ footer img {
 footer a:hover,
 footer p,
 footer h3 {
-  color: black;
+  color: white;
+}
+
+form {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+form input.form-control {
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+}
+form input.form-control:focus {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+form input.form-control::placeholder {
+  color: white;
+}
+
+form textarea.form-control {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+}
+form textarea.form-control:focus {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+form textarea.form-control::placeholder {
+  color: white;
+}
+.brands img {
+  cursor: pointer;
+  transition: 0.2 ease all;
+}
+.brands img:hover {
+  transform: scale(1.2);
 }
 
 /* own media queries */
