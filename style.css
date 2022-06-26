@@ -55,12 +55,28 @@
   font-size: 0.9rem;
 }
 
+/* galery */
+#galery img {
+  width: 25%;
+  aspect-ratio: 1 / 1;
+}
+
+#galery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+
 /* clients */
 
 .client {
   width: 80%;
   border-radius: 50%;
-  min-width: 15vw; /* viewport width */
+  min-width: 15vw;
+  /* viewport width */
 }
 
 /* contact */
@@ -82,9 +98,17 @@ footer h3 {
 }
 
 /* own media queries */
-
 @media all and (max-width: 767px) {
   .client {
     width: 50%;
+  }
+
+  .galery {
+    width: 50%;
+  }
+
+  #galery img {
+    width: 45%;
+    padding: 1px;
   }
 }
