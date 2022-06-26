@@ -1,3 +1,13 @@
+/* start global */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2c7283;
+}
+/* end global */
 /* navigation */
 
 .navbar {
@@ -84,12 +94,79 @@
 	border-radius: 50%;
 	min-width: 15vw; /* viewport width */
 }
+/* start about section */
+#about {
+  background-color: #bfd1d5;
+}
+.about {
+  width: 80%;
+  border-radius: 50%;
+  min-width: 15vw; /* viewport width */
+}
+/* end about section */
+
+/* clients */
+
+.tourist{
+  width: 40%;
+  border-radius: 40%;
+  min-width: 15vw; /* viewport width */
+  max-width: 400px;
+}
+
+.blockquote{
+  width: 50%;
+  margin: 20px auto;
+}
+
+.blockquote p{
+  margin: 0 auto;
+}
+
+.blockquote-footer{
+  margin-bottom: 20px;
+}
+
+cite{
+  font-size: 1.2rem;
+}
+
+.jumbo-line{
+  width: 90%;
+}
 
 /* contact */
+#contact footer {
+  background-image: url("/img/mountain.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#contact footer img {
+  opacity: 0.8;
+}
+
+#contact footer button.send_button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  color: black;
+  padding: 5px 60px;
+  border-radius: 10px;
+}
+#contact footer button:hover {
+  background-color: #d3d4d0;
+}
+
 
 footer,
 footer a {
 	color: grey;
+}
+
+footer {
+  color: white;
+  font-size: 1.5rem;
 }
 
 footer img {
@@ -100,13 +177,81 @@ footer img {
 footer a:hover,
 footer p,
 footer h3 {
-	color: black;
+
+  color: white;
+}
+
+form {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+form input.form-control {
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+}
+form input.form-control:focus {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+form input.form-control::placeholder {
+  color: white;
+}
+
+form textarea.form-control {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+}
+form textarea.form-control:focus {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+form textarea.form-control::placeholder {
+  color: white;
+}
+.brands img {
+  cursor: pointer;
+  transition: 0.2 ease all;
+}
+.brands img:hover {
+  transform: scale(1.2);
 }
 
 /* own media queries */
 
 @media all and (max-width: 767px) {
-	.client {
-		width: 50%;
-	}
+
+  .client {
+    width: 50%;
+  }
+  .blockquote {
+    width: 90%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .jumbo-line {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1202px) {
+  .jumbo-line {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 1201px) {
+  .blockquote p{
+    max-width: 560px;
+    font-size: 1.6rem;
+  }
+  .jumbo-line{
+    max-width: 660px;
+  }
 }
