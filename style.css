@@ -78,10 +78,32 @@ h6 {
 
 /* clients */
 
-.client {
-  width: 80%;
-  border-radius: 50%;
+.tourist{
+  width: 40%;
+  border-radius: 40%;
   min-width: 15vw; /* viewport width */
+  max-width: 400px;
+}
+
+.blockquote{
+  width: 50%;
+  margin: 20px auto;
+}
+
+.blockquote p{
+  margin: 0 auto;
+}
+
+.blockquote-footer{
+  margin-bottom: 20px;
+}
+
+cite{
+  font-size: 1.2rem;
+}
+
+.jumbo-line{
+  width: 90%;
 }
 
 /* contact */
@@ -169,5 +191,30 @@ form textarea.form-control::placeholder {
 @media all and (max-width: 767px) {
   .client {
     width: 50%;
+  }
+  .blockquote {
+    width: 90%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .jumbo-line {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1202px) {
+  .jumbo-line {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 1201px) {
+  .blockquote p{
+    max-width: 560px;
+    font-size: 1.6rem;
+  }
+  .jumbo-line{
+    max-width: 660px;
   }
 }
